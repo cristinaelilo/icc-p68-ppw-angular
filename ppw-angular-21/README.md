@@ -1,59 +1,156 @@
-# PpwAngular21
+# PPW Angular 21
+---
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+# Descripción del Proyecto
 
-## Development server
+Este proyecto corresponde al desarrollo incremental de una aplicación web utilizando **Angular 21**, donde se implementan conceptos fundamentales del framework como routing, componentes standalone y manejo de estado reactivo.
 
-To start a local development server, run:
+El proyecto está diseñado para crecer progresivamente a lo largo de los módulos de la materia.
 
-```bash
-ng serve
+---
+
+# Tecnologías Utilizadas
+
+* Angular 21
+* TypeScript
+* SCSS
+* Node.js
+* npm
+
+---
+
+# Estructura del Proyecto
+
+```
+src/
+  app/
+    app.config.ts
+    app.routes.ts
+    app.ts
+    features/
+      home/
+        pages/
+          home-page.ts
+      profile/
+        pages/
+          profile-page.ts
+          profile-page.html
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+# Práctica 01: Instalación y Configuración
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Objetivo
+
+Crear y configurar el proyecto base con Angular 21, habilitando routing y estableciendo una estructura organizada por features.
+
+## Funcionalidades implementadas
+
+* Creación del proyecto con Angular CLI
+* Configuración de routing
+* Uso de componentes standalone
+* Estructura modular por features
+* Página inicial (Home) funcional
+
+## Evidencias
+
+Ubicación: `evidencias/assets/`
+
+* 01-ng-version.png
+![ng version](evidencias/assets/01-ng-version.png)
+
+* 01-ng-new.png
+![ng new](evidencias/assets/01-ng-new.png)
+
+* 01-app-inicio.png
+![app inicio](evidencias/assets/01-app-inicio.png)
+
+* 01-home-page.png
+![home page](evidencias/assets/01-home-page.png)
+
+## Resultado
+
+El proyecto se ejecuta correctamente en el navegador y muestra la página inicial configurada.
+
+---
+
+# Práctica 02: Fundamentos de Angular
+
+## Objetivo
+
+Implementar funcionalidades modernas de Angular utilizando signals, computed y control flow dentro de una feature real.
+
+## Funcionalidades implementadas
+
+* Creación de la feature `profile`
+* Manejo de estado con `signal()`
+* Uso de `computed()` para valores derivados
+* Actualización dinámica de datos con eventos
+* Renderizado condicional con `@if`
+* Iteración de listas con `@for`
+* Control de flujo con `@switch`
+* Navegación entre páginas
+
+## Comportamiento de la aplicación
+
+* Se muestra el nombre completo y edad
+* Un botón permite cambiar los datos dinámicamente
+* Se visualiza una lista de habilidades
+* Se clasifica la edad automáticamente (Joven, Adulto, etc.)
+
+## Rutas disponibles
+
+* `/` → Página principal (Home)
+* `/profile` → Página de perfil
+
+## Evidencias
+
+Ubicación: `evidencias/assets/`
+
+* 02-profile-page.png
+![profile page](evidencias/assets/02-profile-page.png)
+
+## Resultado
+
+La aplicación permite interacción dinámica y navegación correcta entre páginas, aplicando correctamente los fundamentos modernos de Angular.
+
+---
+
+# Instalación y Ejecución
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abrir en el navegador:
 
-```bash
-ng generate --help
-```
+http://localhost:4200
 
-## Building
+---
 
-To build the project run:
+# Validaciones Cumplidas
 
-```bash
-ng build
-```
+* Proyecto Angular creado correctamente
+* Aplicación ejecutándose sin errores
+* Routing funcional
+* Uso de componentes standalone
+* Implementación de signals y computed
+* Uso correcto de @if, @for y @switch
+* Navegación entre páginas funcionando
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+# Conclusión
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Se logró desarrollar una aplicación Angular funcional aplicando buenas prácticas de organización y programación reactiva, estableciendo una base sólida para continuar con los siguientes módulos del curso.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Autor
 
-For end-to-end (e2e) testing, run:
+Nombre: Cristina Loja 
 
-```bash
-ng e2e
-```
+Correo: clojap1@est.ups.edu.ec
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
